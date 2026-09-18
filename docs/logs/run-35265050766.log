@@ -1,0 +1,47 @@
+===== 轮4 SUCCESS 摘录（5.10.149 绿，产物 19.4MB）=====
+
+--- vmlinux 链接段 ---
+build	UNKNOWN STEP	2026-09-17T19:29:36.8037087Z   LDS     arch/arm64/kernel/vmlinux.lds
+build	UNKNOWN STEP	2026-09-17T19:29:36.8467484Z   CC      arch/arm64/kernel/debug-monitors.o
+build	UNKNOWN STEP	2026-09-17T19:29:37.2758349Z   CC      init/version.o
+build	UNKNOWN STEP	2026-09-17T19:29:38.0279428Z   AS      arch/arm64/mm/cache.o
+build	UNKNOWN STEP	2026-09-17T19:29:38.0580634Z   AR      init/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:29:38.0606583Z   CC      kernel/sched/loadavg.o
+build	UNKNOWN STEP	2026-09-17T19:29:38.1307577Z   CC      arch/arm64/mm/copypage.o
+build	UNKNOWN STEP	2026-09-17T19:29:38.4397215Z   AS      arch/arm64/kernel/entry.o
+build	UNKNOWN STEP	2026-09-17T19:29:38.6127058Z   CC      arch/arm64/kernel/irq.o
+build	UNKNOWN STEP	2026-09-17T19:29:39.2137166Z   CC      certs/system_keyring.o
+build	UNKNOWN STEP	2026-09-17T19:29:39.3957731Z   CC      arch/arm64/mm/flush.o
+build	UNKNOWN STEP	2026-09-17T19:29:39.5846966Z   CC      arch/arm64/kernel/fpsimd.o
+build	UNKNOWN STEP	2026-09-17T19:29:40.0726820Z   EXTRACT_CERTS   
+build	UNKNOWN STEP	2026-09-17T19:29:40.0786694Z   CC      certs/common.o
+build	UNKNOWN STEP	2026-09-17T19:29:40.3616986Z   CC      kernel/sched/clock.o
+build	UNKNOWN STEP	2026-09-17T19:29:40.5606952Z   AS      certs/system_certificates.o
+build	UNKNOWN STEP	2026-09-17T19:29:40.6208524Z   CC      arch/arm64/mm/ioremap.o
+build	UNKNOWN STEP	2026-09-17T19:29:40.6432482Z   AR      certs/built-in.a
+
+--- Image 生成段 ---
+build	UNKNOWN STEP	2026-09-17T19:46:52.4588794Z   AS      .tmp_vmlinux.kallsyms2.S
+build	UNKNOWN STEP	2026-09-17T19:46:53.1983421Z   LD      vmlinux
+build	UNKNOWN STEP	2026-09-17T19:46:54.2983884Z   SORTTAB vmlinux
+build	UNKNOWN STEP	2026-09-17T19:46:54.3004576Z   SYSMAP  System.map
+build	UNKNOWN STEP	2026-09-17T19:46:54.9562262Z   OBJCOPY arch/arm64/boot/Image
+build	UNKNOWN STEP	2026-09-17T19:46:54.9993712Z make[1]: Leaving directory '/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/out'
+build	UNKNOWN STEP	2026-09-17T19:46:55.0026220Z --- 编译后环境时间: Sun May 25 13:00:00 CST 2025 ---
+build	UNKNOWN STEP	2026-09-17T19:46:55.0026860Z --- 编译后环境文件时间戳: ---
+build	UNKNOWN STEP	2026-09-17T19:46:55.0047441Z   File: ./Makefile
+build	UNKNOWN STEP	2026-09-17T19:46:55.0048009Z   Size: 68580     	Blocks: 136        IO Block: 4096   regular file
+build	UNKNOWN STEP	2026-09-17T19:46:55.0048612Z Device: 8,1	Inode: 9192341     Links: 1
+build	UNKNOWN STEP	2026-09-17T19:46:55.0049183Z Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: ( 1001/  runner)
+
+--- release 尾部 ---
+release	UNKNOWN STEP	2026-09-17T19:47:12.5022173Z   CCACHE_KEY: ccache-ecsv4-5.10.149
+release	UNKNOWN STEP	2026-09-17T19:47:12.5022668Z   FULL_VERSION: 5.10.149-android12-9-o-g5.10.149
+release	UNKNOWN STEP	2026-09-17T19:47:12.5023193Z   TIME: 260918034712
+release	UNKNOWN STEP	2026-09-17T19:47:12.5023636Z   TIME_FORM: 2026-09-18 03:47:12
+release	UNKNOWN STEP	2026-09-17T19:47:12.5024138Z   TAG_HEAD: OPPO-OPlus-Realme-build
+release	UNKNOWN STEP	2026-09-17T19:47:12.5024667Z   KSU_TYPENAME: ReSukiSU
+release	UNKNOWN STEP	2026-09-17T19:47:12.5028090Z   GITHUB_TOKEN: ***
+release	UNKNOWN STEP	2026-09-17T19:47:12.5028552Z ##[endgroup]
+release	UNKNOWN STEP	2026-09-17T19:52:08.8898212Z https://github.com/BailinT/oppo_oplus_realme_5x/releases/tag/OPPO-OPlus-Realme-build-260918034712
+release	UNKNOWN STEP	2026-09-17T19:52:08.9016867Z Cleaning up orphan processes

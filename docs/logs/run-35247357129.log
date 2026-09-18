@@ -1,0 +1,90 @@
+===== 错误上下文（fs/susfs.c 报错段）=====
+build	构建内核	2026-09-17T16:40:02.7763418Z   CC      sound/soc/soc-utils.o
+build	构建内核	2026-09-17T16:40:02.8281167Z   CC      drivers/pci/probe.o
+build	构建内核	2026-09-17T16:40:02.9212431Z   CC      fs/remap_range.o
+build	构建内核	2026-09-17T16:40:03.5331161Z   CC      net/core/dev.o
+build	构建内核	2026-09-17T16:40:03.7727733Z   CC      sound/soc/soc-dai.o
+build	构建内核	2026-09-17T16:40:04.2021524Z   CC      fs/susfs.o
+build	构建内核	2026-09-17T16:40:04.2772679Z   CC      drivers/pci/host-bridge.o
+build	构建内核	2026-09-17T16:40:04.9111612Z   CC      sound/soc/soc-component.o
+build	构建内核	2026-09-17T16:40:05.2451027Z   CC      drivers/pci/remove.o
+build	构建内核	2026-09-17T16:40:06.1031169Z   CC      sound/soc/soc-pcm.o
+build	构建内核	2026-09-17T16:40:06.2731144Z   CC      drivers/pci/pci.o
+build	构建内核	2026-09-17T16:40:07.7247200Z   CC      sound/soc/soc-devres.o
+build	构建内核	2026-09-17T16:40:08.1459373Z ../fs/susfs.c:284:11: error: implicit declaration of function 'security_sb_statfs' [-Werror,-Wimplicit-function-declaration]
+build	构建内核	2026-09-17T16:40:08.1460568Z   284 |         retval = security_sb_statfs(dentry);
+build	构建内核	2026-09-17T16:40:08.1461126Z       |                  ^
+build	构建内核	2026-09-17T16:40:08.1461714Z 1 error generated.
+build	构建内核	2026-09-17T16:40:08.1497707Z make[2]: *** [../scripts/Makefile.build:273: fs/susfs.o] Error 1
+build	构建内核	2026-09-17T16:40:08.1503105Z make[1]: *** [/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/Makefile:1930: fs] Error 2
+build	构建内核	2026-09-17T16:40:08.1504063Z make[1]: *** Waiting for unfinished jobs....
+build	构建内核	2026-09-17T16:40:08.1583393Z   CC      net/llc/llc_core.o
+build	构建内核	2026-09-17T16:40:08.3771235Z   CC      drivers/pci/pci-driver.o
+build	构建内核	2026-09-17T16:40:08.4444777Z   CC      net/core/dev_addr_lists.o
+build	构建内核	2026-09-17T16:40:08.7280964Z   CC      sound/soc/soc-ops.o
+build	构建内核	2026-09-17T16:40:09.3814426Z   CC      net/llc/llc_input.o
+build	构建内核	2026-09-17T16:40:09.8371276Z   CC      sound/soc/soc-link.o
+build	构建内核	2026-09-17T16:40:09.8551704Z   CC      drivers/pci/search.o
+build	构建内核	2026-09-17T16:40:09.8668248Z   CC      net/core/dst.o
+build	构建内核	2026-09-17T16:40:10.6461199Z   CC      net/llc/llc_output.o
+build	构建内核	2026-09-17T16:40:10.8341291Z   CC      sound/soc/soc-card.o
+build	构建内核	2026-09-17T16:40:10.8711207Z   CC      drivers/pci/pci-sysfs.o
+build	构建内核	2026-09-17T16:40:11.7683494Z   CC      net/core/netevent.o
+build	构建内核	2026-09-17T16:40:11.8101145Z   CC      drivers/pci/rom.o
+build	构建内核	2026-09-17T16:40:11.8739358Z   CC      sound/soc/soc-topology.o
+===== 尾部（make 收尾）=====
+build	构建内核	2026-09-17T16:46:58.0915102Z   CC      drivers/hid/hid-roccat-pyra.o
+build	构建内核	2026-09-17T16:46:58.3652870Z   CC      drivers/kernelsu/policy/allowlist.o
+build	构建内核	2026-09-17T16:46:58.3710830Z   CC      drivers/android/vendor_hooks.o
+build	构建内核	2026-09-17T16:46:58.5841739Z   CC      drivers/hid/hid-roccat-ryos.o
+build	构建内核	2026-09-17T16:46:58.7907446Z   CC      drivers/kernelsu/policy/app_profile.o
+build	构建内核	2026-09-17T16:46:59.2091119Z   CC      drivers/hid/hid-roccat-savu.o
+build	构建内核	2026-09-17T16:46:59.9381168Z   CC      drivers/hid/hid-sony.o
+build	构建内核	2026-09-17T16:47:00.1648873Z   CC      drivers/kernelsu/policy/feature.o
+build	构建内核	2026-09-17T16:47:00.4317072Z   CC      drivers/hid/hid-steam.o
+build	构建内核	2026-09-17T16:47:00.6431010Z   CC      drivers/kernelsu/feature/sucompat.o
+build	构建内核	2026-09-17T16:47:00.8381089Z   CC      drivers/hid/hid-uclogic-core.o
+build	构建内核	2026-09-17T16:47:01.2031212Z   CC      drivers/kernelsu/feature/kernel_umount.o
+build	构建内核	2026-09-17T16:47:01.4750736Z   CC      drivers/hid/hid-uclogic-rdesc.o
+build	构建内核	2026-09-17T16:47:01.8541279Z   CC      drivers/kernelsu/feature/sulog.o
+build	构建内核	2026-09-17T16:47:02.0231248Z   CC      drivers/hid/hid-uclogic-params.o
+build	构建内核	2026-09-17T16:47:02.3416840Z   CC      drivers/kernelsu/feature/adb_root.o
+build	构建内核	2026-09-17T16:47:02.4081058Z   CC      drivers/hid/wacom_wac.o
+build	构建内核	2026-09-17T16:47:02.8921232Z   CC      drivers/kernelsu/feature/selinux_hide.o
+build	构建内核	2026-09-17T16:47:03.5171108Z   CC      drivers/hid/wacom_sys.o
+build	构建内核	2026-09-17T16:47:03.5823091Z   AR      drivers/android/built-in.a
+build	构建内核	2026-09-17T16:47:03.5900906Z   CC      drivers/kernelsu/feature/module_load_filter.o
+build	构建内核	2026-09-17T16:47:03.7967742Z   CC      drivers/hid/hid-wiimote-core.o
+build	构建内核	2026-09-17T16:47:04.1331321Z   CC      drivers/kernelsu/hook/setuid_hook.o
+build	构建内核	2026-09-17T16:47:04.6981213Z   CC      drivers/hid/hid-wiimote-modules.o
+build	构建内核	2026-09-17T16:47:04.7551091Z   CC      drivers/kernelsu/feature/dynamic_manager.o
+build	构建内核	2026-09-17T16:47:04.7781139Z   CC      drivers/hid/hid-wiimote-debug.o
+build	构建内核	2026-09-17T16:47:05.2642219Z   CC      drivers/kernelsu/manager/apk_sign.o
+build	构建内核	2026-09-17T16:47:05.4311220Z   CC      drivers/kernelsu/manager/throne_tracker.o
+build	构建内核	2026-09-17T16:47:05.6211011Z   AR      drivers/hid/built-in.a
+build	构建内核	2026-09-17T16:47:05.6273463Z   CC      drivers/kernelsu/manager/manager.o
+build	构建内核	2026-09-17T16:47:05.8071135Z   CC      drivers/kernelsu/compat/kernel_compat.o
+build	构建内核	2026-09-17T16:47:06.5151255Z   CC      drivers/kernelsu/infra/su_mount_ns.o
+build	构建内核	2026-09-17T16:47:06.6111910Z   CC      drivers/kernelsu/infra/seccomp_cache.o
+build	构建内核	2026-09-17T16:47:06.7931207Z   CC      drivers/kernelsu/infra/file_wrapper.o
+build	构建内核	2026-09-17T16:47:07.0511347Z   CC      drivers/kernelsu/infra/event_queue.o
+build	构建内核	2026-09-17T16:47:07.7251209Z   CC      drivers/kernelsu/runtime/boot_event.o
+build	构建内核	2026-09-17T16:47:07.7351218Z   CC      drivers/kernelsu/runtime/ksud_integration.o
+build	构建内核	2026-09-17T16:47:08.0341190Z   CC      drivers/kernelsu/selinux/selinux.o
+build	构建内核	2026-09-17T16:47:08.2181285Z   CC      drivers/kernelsu/selinux/sepolicy.o
+build	构建内核	2026-09-17T16:47:08.2491215Z   CC      drivers/kernelsu/selinux/rules.o
+build	构建内核	2026-09-17T16:47:08.9385321Z   CC      drivers/kernelsu/sulog/event.o
+build	构建内核	2026-09-17T16:47:09.3841112Z   CC      drivers/kernelsu/sulog/fd.o
+build	构建内核	2026-09-17T16:47:09.3931097Z   CC      drivers/kernelsu/supercall/dispatch.o
+build	构建内核	2026-09-17T16:47:09.6185758Z   CC      drivers/kernelsu/supercall/perm.o
+build	构建内核	2026-09-17T16:47:09.8911079Z   CC      drivers/kernelsu/supercall/supercall.o
+build	构建内核	2026-09-17T16:47:10.0712368Z   CC      drivers/kernelsu/compat/apatch_conflict.o
+build	构建内核	2026-09-17T16:47:10.4816392Z   CC      drivers/kernelsu/hook/arm64/patch_memory.o
+build	构建内核	2026-09-17T16:47:10.6361049Z   CC      drivers/kernelsu/infra/symbol_resolver.o
+build	构建内核	2026-09-17T16:47:10.8201117Z   CC      drivers/kernelsu/hook/lsm_hook_magic.o
+build	构建内核	2026-09-17T16:47:11.0780560Z   CC      drivers/kernelsu/hook/lsm_hooks.o
+build	构建内核	2026-09-17T16:47:11.8774351Z   AR      drivers/kernelsu/built-in.a
+build	构建内核	2026-09-17T16:47:11.8820716Z   AR      drivers/built-in.a
+build	构建内核	2026-09-17T16:47:11.9142094Z make[1]: Leaving directory '/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/out'
+build	构建内核	2026-09-17T16:47:11.9145224Z make: *** [Makefile:192: __sub-make] Error 2
+build	构建内核	2026-09-17T16:47:11.9161680Z ##[error]Process completed with exit code 2.

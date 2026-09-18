@@ -1,0 +1,41 @@
+===== 轮5 SUCCESS 摘录（构建收尾段 + release 链接）=====
+release	创建发布	2026-09-17T17:27:22.1077250Z ^[[36;1m- KernelSU Next管理器下载：[KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next/releases)^[[0m
+release	创建发布	2026-09-17T17:27:22.1078163Z ^[[36;1m- KSU原版管理器下载：[KernelSU](https://github.com/tiann/KernelSU/releases)^[[0m
+release	创建发布	2026-09-17T17:27:22.1078603Z ^[[36;1m^[[0m
+release	创建发布	2026-09-17T17:27:22.1078850Z ^[[36;1m### ⏫️ 更新内容：^[[0m
+release	创建发布	2026-09-17T17:27:22.1079130Z ^[[36;1m- 更新ReSukiSU至最新版本（35154）^[[0m
+release	创建发布	2026-09-17T17:27:22.1079438Z ^[[36;1m- (预留)^[[0m
+release	创建发布	2026-09-17T17:27:22.1079686Z ^[[36;1m^[[0m
+release	创建发布	2026-09-17T17:27:22.1079949Z ^[[36;1m### 📋 安装方法 | Installation Guide^[[0m
+release	创建发布	2026-09-17T17:27:22.1080440Z ^[[36;1m1. 若你的手机已经安装了第三方Recovery（如TWRP)，可下载对应机型的AnyKernel刷机包后进入Recovery模式，通过Recovery刷入刷机包后重启设备；^[[0m
+release	创建发布	2026-09-17T17:27:22.1081341Z ^[[36;1m2. 若你的手机之前已有 root 权限，可在手机上安装[HorizonKernelFlasher](https://github.com/libxzr/HorizonKernelFlasher/releases)，在HorizonKernelFlasher中刷入AnyKernel刷机包并重启；^[[0m
+release	创建发布	2026-09-17T17:27:22.1082281Z ^[[36;1m3. 若你之前已刷入SukiSU Ultra内核，且SukiSU Ultra管理器已更新至最新版本，可在SukiSU Ultra管理器中直接刷入AnyKernel刷机包并重启；^[[0m
+release	创建发布	2026-09-17T17:27:22.1082835Z ^[[36;1m4. 刷入无lz4kd补丁版的内核前若刷入过lz4kd补丁版的内核，为避免出错，请先关闭zram模块；^[[0m
+release	创建发布	2026-09-17T17:27:22.1084964Z ^[[36;1m5. 由于KernelSU上游更新了元模块功能，最新版KSU管理器（包括除KernelSU Next以外的各分支）需要配合元模块(metamodule)才能正常挂载模块。目前的元模块包括[meta overlayfs](https://github.com/KernelSU-Modules-Repo/meta-overlayfs), [mountify](https://github.com/backslashxx/mountify), [meta magicmount](https://github.com/7a72/meta-magic_mount/), [meta magicmount rs](https://github.com/Tools-cx-app/meta-magic_mount/), [hybrid mount](https://github.com/YuzakiKokuban/meta-hybrid_mount)等。若你是第一次使用KSU或刚从旧版KSU管理器升级至新版，请先安装一个元模块，这样其他涉及系统挂载的模块才能正常运行；^[[0m
+release	创建发布	2026-09-17T17:27:22.1087146Z ^[[36;1m6. KernelPatch Next（即KPN）是一个独立于KSU的KPM实现，可以运行在任意KSU/面具环境中（不适用于Apatch），且不能与(Re)SukiSU内置的kpm功能共同使用，使用前请保证你的内核没有内置的kpm实现/修补。^[[0m
+release	创建发布	2026-09-17T17:27:22.1087751Z ^[[36;1m^[[0m
+release	创建发布	2026-09-17T17:27:22.1088257Z ^[[36;1m#### ※※※刷写内核有风险，为防止出现意外导致手机变砖，在刷入内核前请务必用[KernelFlasher](https://github.com/capntrips/KernelFlasher)等软件备份boot等关键启动分区!※※※^[[0m
+release	创建发布	2026-09-17T17:27:22.1088827Z ^[[36;1mEOF^[[0m
+release	创建发布	2026-09-17T17:27:22.1089070Z ^[[36;1m^[[0m
+release	创建发布	2026-09-17T17:27:22.1089409Z ^[[36;1mgh release create "OPPO-OPlus-Realme-build-260918012722" \^[[0m
+release	创建发布	2026-09-17T17:27:22.1089922Z ^[[36;1m  --repo "BailinT/oppo_oplus_realme_5x" \^[[0m
+release	创建发布	2026-09-17T17:27:22.1090436Z ^[[36;1m  --title "OPPO-OPlus-Realme-build-5.10.236-android12-9-o-g5.10.236" \^[[0m
+release	创建发布	2026-09-17T17:27:22.1090931Z ^[[36;1m  --notes-file release_notes.md \^[[0m
+release	创建发布	2026-09-17T17:27:22.1091286Z ^[[36;1m  release_zips/AnyKernel3_*.zip^[[0m
+release	创建发布	2026-09-17T17:27:22.1129364Z shell: /usr/bin/bash -e {0}
+release	创建发布	2026-09-17T17:27:22.1129705Z env:
+release	创建发布	2026-09-17T17:27:22.1129957Z   TZ: Asia/Shanghai
+release	创建发布	2026-09-17T17:27:22.1130245Z   ANDROID_VERSION: android12
+release	创建发布	2026-09-17T17:27:22.1130546Z   KERNEL_VERSION: 5.10
+release	创建发布	2026-09-17T17:27:22.1131067Z   SUB_VERSION: 236
+release	创建发布	2026-09-17T17:27:22.1131349Z   KERNEL_NAME: android12-9-o-g5.10.236
+release	创建发布	2026-09-17T17:27:22.1131686Z   CCACHE_KEY: ccache-ecsv4-5.10.236
+release	创建发布	2026-09-17T17:27:22.1132033Z   FULL_VERSION: 5.10.236-android12-9-o-g5.10.236
+release	创建发布	2026-09-17T17:27:22.1132374Z   TIME: 260918012722
+release	创建发布	2026-09-17T17:27:22.1132646Z   TIME_FORM: 2026-09-18 01:27:22
+release	创建发布	2026-09-17T17:27:22.1132959Z   TAG_HEAD: OPPO-OPlus-Realme-build
+release	创建发布	2026-09-17T17:27:22.1133418Z   KSU_TYPENAME: ReSukiSU
+release	创建发布	2026-09-17T17:27:22.1136815Z   GITHUB_TOKEN: ***
+release	创建发布	2026-09-17T17:27:22.1137133Z ##[endgroup]
+release	创建发布	2026-09-17T17:27:30.0423775Z https://github.com/BailinT/oppo_oplus_realme_5x/releases/tag/OPPO-OPlus-Realme-build-260918012722
+release	Complete job	﻿2026-09-17T17:27:30.0542922Z Cleaning up orphan processes

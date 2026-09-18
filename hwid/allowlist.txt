@@ -1,0 +1,5 @@
+# One lowercase HWID per line. Blank lines and lines beginning with # are ignored.
+abbe0d2c
+a4651c19
+bb94de55
+831b8814

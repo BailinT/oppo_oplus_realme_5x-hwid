@@ -1,0 +1,33 @@
+===== 错误上下文（drivers/scsi/ufs/ufshpb.c 报错段）=====
+build	UNKNOWN STEP	2026-09-17T19:35:40.8685347Z   CC      net/netfilter/xt_conntrack.o
+build	UNKNOWN STEP	2026-09-17T19:35:40.8926063Z   CC      net/ipv4/datagram.o
+build	UNKNOWN STEP	2026-09-17T19:35:41.2615235Z   CC      drivers/scsi/ufs/ufshcd-crypto.o
+build	UNKNOWN STEP	2026-09-17T19:35:41.8147751Z   CC      net/netfilter/xt_dscp.o
+build	UNKNOWN STEP	2026-09-17T19:35:41.9768793Z   CC      drivers/scsi/ufs/ufshpb.o
+build	UNKNOWN STEP	2026-09-17T19:35:41.9794787Z   CC      net/ipv6/ndisc.o
+build	UNKNOWN STEP	2026-09-17T19:35:42.1375353Z   CC      net/ipv4/raw.o
+build	UNKNOWN STEP	2026-09-17T19:35:42.6475445Z   CC      net/netfilter/xt_ecn.o
+build	UNKNOWN STEP	2026-09-17T19:35:42.6745735Z ../drivers/scsi/ufs/ufshpb.c:3633:28: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+build	UNKNOWN STEP	2026-09-17T19:35:42.6795423Z  3633 | static int ufshpb_get_mm_lv()
+build	UNKNOWN STEP	2026-09-17T19:35:42.6795735Z   CC      net/ipv6/udp.o
+build	UNKNOWN STEP	2026-09-17T19:35:42.6804866Z       |                            ^
+build	UNKNOWN STEP	2026-09-17T19:35:42.6816040Z       |                             void
+build	UNKNOWN STEP	2026-09-17T19:35:42.6855343Z ../drivers/scsi/ufs/ufshpb.c:3725:28: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+build	UNKNOWN STEP	2026-09-17T19:35:42.6856184Z  3725 | static long ufshpb_page_cnt()
+build	UNKNOWN STEP	2026-09-17T19:35:42.6884808Z       |                            ^
+build	UNKNOWN STEP	2026-09-17T19:35:42.6914664Z       |                             void
+build	UNKNOWN STEP	2026-09-17T19:35:42.6944637Z 2 errors generated.
+
+===== 尾部（make 收尾）=====
+build	UNKNOWN STEP	2026-09-17T19:36:49.8695327Z   CC      net/compat.o
+build	UNKNOWN STEP	2026-09-17T19:36:49.9896501Z   AR      net/vmw_vsock/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:36:49.9954864Z   CC      net/xdp/xsk_buff_pool.o
+build	UNKNOWN STEP	2026-09-17T19:36:50.4775332Z   CC      net/sysctl_net.o
+build	UNKNOWN STEP	2026-09-17T19:36:51.0826846Z   AR      net/xdp/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:36:51.3696057Z   AR      net/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:36:51.3858438Z make[1]: Leaving directory '/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/out'
+build	UNKNOWN STEP	2026-09-17T19:36:51.3861912Z make: *** [Makefile:185: __sub-make] Error 2
+build	UNKNOWN STEP	2026-09-17T19:36:51.3878222Z ##[error]Process completed with exit code 2.
+build	UNKNOWN STEP	2026-09-17T19:36:51.3979735Z Evaluate and set job outputs
+build	UNKNOWN STEP	2026-09-17T19:36:51.3985704Z Set output 'ksuver'
+build	UNKNOWN STEP	2026-09-17T19:36:51.3986580Z Cleaning up orphan processes

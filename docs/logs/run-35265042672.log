@@ -1,0 +1,31 @@
+===== 错误上下文（fs/notify/fdinfo.c 报错段）=====
+build	UNKNOWN STEP	2026-09-17T19:30:22.9802739Z   CC      kernel/irq/spurious.o
+build	UNKNOWN STEP	2026-09-17T19:30:23.2623193Z   CC      fs/notify/mark.o
+build	UNKNOWN STEP	2026-09-17T19:30:23.3325359Z   CC      mm/percpu.o
+build	UNKNOWN STEP	2026-09-17T19:30:23.5532824Z   AR      arch/arm64/kvm/hyp/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:30:23.5603017Z   CC      arch/arm64/kvm/../../../virt/kvm/kvm_main.o
+build	UNKNOWN STEP	2026-09-17T19:30:24.0782876Z   CC      kernel/irq/resend.o
+build	UNKNOWN STEP	2026-09-17T19:30:24.8813090Z   CC      fs/notify/fdinfo.o
+build	UNKNOWN STEP	2026-09-17T19:30:25.0922786Z   CC      kernel/irq/chip.o
+build	UNKNOWN STEP	2026-09-17T19:30:25.6913197Z ../fs/notify/fdinfo.c:118:7: error: implicit declaration of function 'inotify_mark_user_mask' [-Werror,-Wimplicit-function-declaration]
+build	UNKNOWN STEP	2026-09-17T19:30:25.6923639Z   118 |                                                 inotify_mark_user_mask(mark));
+build	UNKNOWN STEP	2026-09-17T19:30:25.6927350Z       |                                                 ^
+build	UNKNOWN STEP	2026-09-17T19:30:25.6928484Z ../fs/notify/fdinfo.c:149:7: error: implicit declaration of function 'inotify_mark_user_mask' [-Werror,-Wimplicit-function-declaration]
+build	UNKNOWN STEP	2026-09-17T19:30:25.6933535Z   149 |                                                 inotify_mark_user_mask(mark));
+build	UNKNOWN STEP	2026-09-17T19:30:25.6934171Z       |                                                 ^
+build	UNKNOWN STEP	2026-09-17T19:30:25.6935053Z ../fs/notify/fdinfo.c:170:3: warning: label followed by a declaration is a C23 extension [-Wc23-extensions]
+build	UNKNOWN STEP	2026-09-17T19:30:25.6935964Z   170 |                 u32 mask = mark->mask & IN_ALL_EVENTS;
+
+===== 尾部（make 收尾）=====
+build	UNKNOWN STEP	2026-09-17T19:32:23.1172559Z   CC      kernel/jump_label.o
+build	UNKNOWN STEP	2026-09-17T19:32:23.4084660Z   CC      kernel/iomem.o
+build	UNKNOWN STEP	2026-09-17T19:32:24.3598967Z   GZIP    kernel/config_data.gz
+build	UNKNOWN STEP	2026-09-17T19:32:24.3865729Z   CC      kernel/configs.o
+build	UNKNOWN STEP	2026-09-17T19:32:33.6665599Z   CC      kernel/kheaders.o
+build	UNKNOWN STEP	2026-09-17T19:32:34.0815035Z   AR      kernel/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:32:34.0920716Z make[1]: Leaving directory '/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/out'
+build	UNKNOWN STEP	2026-09-17T19:32:34.0923548Z make: *** [Makefile:185: __sub-make] Error 2
+build	UNKNOWN STEP	2026-09-17T19:32:34.0942314Z ##[error]Process completed with exit code 2.
+build	UNKNOWN STEP	2026-09-17T19:32:34.1276853Z Evaluate and set job outputs
+build	UNKNOWN STEP	2026-09-17T19:32:34.1306726Z Set output 'ksuver'
+build	UNKNOWN STEP	2026-09-17T19:32:34.1308756Z Cleaning up orphan processes

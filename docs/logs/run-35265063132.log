@@ -1,0 +1,22 @@
+===== 错误上下文（5.15.74 / sm8550：LTO vmlinux.o 后被 runner 回收）=====
+
+--- LTO 起点 ---
+build	UNKNOWN STEP	2026-09-17T19:45:40.5052408Z   GEN     .version
+build	UNKNOWN STEP	2026-09-17T19:45:40.5382150Z   CHK     include/generated/compile.h
+build	UNKNOWN STEP	2026-09-17T19:45:40.5658888Z   GEN     .tmp_initcalls.lds
+build	UNKNOWN STEP	2026-09-17T19:45:41.7363290Z   GEN     .tmp_symversions.lds
+build	UNKNOWN STEP	2026-09-17T19:45:41.7531814Z   LTO     vmlinux.o
+build	UNKNOWN STEP	2026-09-17T19:55:37.1758666Z make[1]: *** [/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/Makefile:1277: vmlinux] Terminated
+build	UNKNOWN STEP	2026-09-17T19:55:37.1783121Z make: *** [Makefile:237: __sub-make] Terminated
+build	UNKNOWN STEP	2026-09-17T19:55:37.3251381Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+
+--- 被回收段 ---
+build	UNKNOWN STEP	2026-09-17T19:45:41.7363290Z   GEN     .tmp_symversions.lds
+build	UNKNOWN STEP	2026-09-17T19:45:41.7531814Z   LTO     vmlinux.o
+build	UNKNOWN STEP	2026-09-17T19:55:37.1758666Z make[1]: *** [/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/Makefile:1277: vmlinux] Terminated
+build	UNKNOWN STEP	2026-09-17T19:55:37.1783121Z make: *** [Makefile:237: __sub-make] Terminated
+build	UNKNOWN STEP	2026-09-17T19:55:37.3251381Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+build	UNKNOWN STEP	2026-09-17T19:55:38.5162521Z ##[error]The operation was canceled.
+build	UNKNOWN STEP	2026-09-17T19:55:38.5410293Z Evaluate and set job outputs
+build	UNKNOWN STEP	2026-09-17T19:55:38.5451072Z Set output 'ksuver'
+build	UNKNOWN STEP	2026-09-17T19:55:38.5452853Z Cleaning up orphan processes

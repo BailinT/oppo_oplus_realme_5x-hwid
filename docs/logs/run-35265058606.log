@@ -1,0 +1,33 @@
+===== 错误上下文（drivers/scsi/ufs/ufshpb.c 报错段）=====
+build	UNKNOWN STEP	2026-09-17T19:41:23.8640944Z   CC      net/ipv6/af_inet6.o
+build	UNKNOWN STEP	2026-09-17T19:41:24.1430970Z   CC      drivers/scsi/ufs/ufshcd-crypto.o
+build	UNKNOWN STEP	2026-09-17T19:41:24.5650986Z   CC      net/ipv4/tcp_metrics.o
+build	UNKNOWN STEP	2026-09-17T19:41:24.7251671Z   CC      net/ipv6/netfilter/ip6table_mangle.o
+build	UNKNOWN STEP	2026-09-17T19:41:25.3981826Z   CC      drivers/scsi/ufs/ufshpb.o
+build	UNKNOWN STEP	2026-09-17T19:41:26.4501717Z   CC      net/ipv6/netfilter/ip6table_raw.o
+build	UNKNOWN STEP	2026-09-17T19:41:26.5651217Z   CC      net/ipv4/tcp_fastopen.o
+build	UNKNOWN STEP	2026-09-17T19:41:26.7151102Z   CC      net/packet/af_packet.o
+build	UNKNOWN STEP	2026-09-17T19:41:26.7481431Z ../drivers/scsi/ufs/ufshpb.c:3633:28: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+build	UNKNOWN STEP	2026-09-17T19:41:26.7500917Z  3633 | static int ufshpb_get_mm_lv()
+build	UNKNOWN STEP	2026-09-17T19:41:26.7510462Z       |                            ^
+build	UNKNOWN STEP	2026-09-17T19:41:26.7530885Z       |                             void
+build	UNKNOWN STEP	2026-09-17T19:41:26.7531462Z   CC      net/ipv6/netfilter/nf_defrag_ipv6_hooks.o
+build	UNKNOWN STEP	2026-09-17T19:41:26.7571355Z ../drivers/scsi/ufs/ufshpb.c:3725:28: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+build	UNKNOWN STEP	2026-09-17T19:41:26.7599636Z  3725 | static long ufshpb_page_cnt()
+build	UNKNOWN STEP	2026-09-17T19:41:26.7622205Z       |                            ^
+build	UNKNOWN STEP	2026-09-17T19:41:26.7627161Z       |                             void
+build	UNKNOWN STEP	2026-09-17T19:41:26.7628033Z 2 errors generated.
+
+===== 尾部（make 收尾）=====
+build	UNKNOWN STEP	2026-09-17T19:43:37.5021216Z   CC      net/ipv6/ip6_udp_tunnel.o
+build	UNKNOWN STEP	2026-09-17T19:43:37.9041004Z   CC      net/compat.o
+build	UNKNOWN STEP	2026-09-17T19:43:39.7791567Z   CC      net/ipv6/mcast_snoop.o
+build	UNKNOWN STEP	2026-09-17T19:43:39.8552232Z   CC      net/sysctl_net.o
+build	UNKNOWN STEP	2026-09-17T19:43:41.4420988Z   AR      net/ipv6/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:43:41.4491177Z   AR      net/built-in.a
+build	UNKNOWN STEP	2026-09-17T19:43:41.4707486Z make[1]: Leaving directory '/home/runner/work/oppo_oplus_realme_5x/oppo_oplus_realme_5x/kernel_workspace/common/out'
+build	UNKNOWN STEP	2026-09-17T19:43:41.4712744Z make: *** [Makefile:192: __sub-make] Error 2
+build	UNKNOWN STEP	2026-09-17T19:43:41.4735245Z ##[error]Process completed with exit code 2.
+build	UNKNOWN STEP	2026-09-17T19:43:41.4882220Z Evaluate and set job outputs
+build	UNKNOWN STEP	2026-09-17T19:43:41.4889446Z Set output 'ksuver'
+build	UNKNOWN STEP	2026-09-17T19:43:41.4891675Z Cleaning up orphan processes

@@ -610,7 +610,7 @@ jobs:
           # 通用自愈: 部分树的 Kconfig 引用开源仓不存在的 vendor 目录(如天玑 kernel/oplus_perf_sched/Kconfig), 自动建空 stub 重试
           DEFCONFIG_OK=0
           for i in $(seq 1 40); do
-            if OUT=$(make -j$(nproc --all) LLVM=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CC="ccache clang" LD="ld.lld" HOSTLD=ld.lld O=out KCFLAGS+=-O2 KCFLAGS+=-Wno-error gki_defconfig 2>&1); then
+            if OUT=$(make -j$(nproc --all) LLVM=1 LLVM_IAS=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CC="ccache clang" LD="ld.lld" HOSTLD=ld.lld O=out KCFLAGS+=-O2 KCFLAGS+=-Wno-error gki_defconfig 2>&1); then
               DEFCONFIG_OK=1
               echo "$OUT" | tail -3
               break
@@ -637,7 +637,13 @@ jobs:
             echo "gki_defconfig 配置失败(见上方输出)"
             exit 1
           fi
-          make -j$(nproc --all) LLVM=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CC="$(pwd)/cc-wrapper" LD="$(pwd)/ld-wrapper" HOSTLD=ld.lld O=out KCFLAGS+=-O2 KCFLAGS+=-Wno-error Image
+          # 5.10 树 HAS_LTO_CLANG 依赖 LLVM_IAS=1(已加) -> defconfig 的 LTO_CLANG_FULL 会生效, 强制 ThinLTO 防内存峰值(对齐 Action-Build; 236 已验证)
+          if grep -q "^CONFIG_LTO_CLANG_FULL=y" out/.config; then
+            bash scripts/config --file out/.config -e LTO_CLANG -e LTO_CLANG_THIN -d LTO_NONE -d LTO_CLANG_FULL
+            make -j$(nproc --all) LLVM=1 LLVM_IAS=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CC="ccache clang" LD="ld.lld" HOSTLD=ld.lld O=out KCFLAGS+=-O2 KCFLAGS+=-Wno-error olddefconfig
+            if grep -q "^CONFIG_LTO_CLANG_THIN=y" out/.config; then echo "已切换为 ThinLTO"; else echo "警告: ThinLTO 未生效"; fi
+          fi
+          make -j$(nproc --all) LLVM=1 LLVM_IAS=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- CC="$(pwd)/cc-wrapper" LD="$(pwd)/ld-wrapper" HOSTLD=ld.lld O=out KCFLAGS+=-O2 KCFLAGS+=-Wno-error Image
           
           # 编译后时间劫持二次校验
           echo "--- 编译后环境时间: $(LD_PRELOAD=$PRELOAD_LIBS date) ---"
